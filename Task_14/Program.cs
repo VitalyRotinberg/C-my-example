@@ -23,7 +23,6 @@ int number = GetNumber();
 int amountOfNumber = NumberCounter(number);
 int discharge = 10;
 int thirdNumber = 0;
-Console.WriteLine($"количество цифр {amountOfNumber}");
 
 if (amountOfNumber < 3)
     Console.WriteLine($"Третьей цифры не обнаружено");
