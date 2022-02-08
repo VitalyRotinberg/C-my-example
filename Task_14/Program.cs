@@ -3,7 +3,19 @@ int GetNumber()//получаем любое число
 {
     Console.WriteLine($"Введите любое число");
     string numberStr = Console.ReadLine();
-    int numberInt = int.Parse(numberStr);
+    bool checkStatus = true;
+    int numberInt = 0;
+    while(checkStatus)
+    {
+        if(int.TryParse(numberStr, out numberInt))
+        {
+            checkStatus = false;
+            break;
+        }
+        else
+            Console.WriteLine("Ввели не число");
+        numberStr = Console.ReadLine();
+    }
     return numberInt;
 }
 int NumberCounter(int digit)//считаем количество цифр в числе
