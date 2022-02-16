@@ -41,3 +41,5 @@ int SumNumber(int number)
 int digit = GetNumber("Введите число, в котором хотите посчитать сумма цифр");
 
 Console.WriteLine($"Сумма цифр в числе {digit} будет равняться = {SumNumber(digit)}");
+
+// Программа работает и с отрицательными числами
