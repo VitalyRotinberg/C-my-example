@@ -1,6 +1,6 @@
 ﻿// Задать двумерный массив следующим правилом: Aₘₙ = m+n
 
-var [,] arr = new int[3,3];
+var arr = new int[3,3];
 
 //Random randomDouble = new Random();
 
